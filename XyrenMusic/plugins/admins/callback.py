@@ -179,14 +179,14 @@ async def del_back_playlist(client, CallbackQuery, _):
         )
     elif command == "Skip":
         check = db.get(chat_id)
-        txt = f"» ᴛʀᴀᴄᴋ sᴋɪᴩᴩᴇᴅ ʙʏ {mention} !"
+        txt = f"» ʟᴀɢᴜ ᴅɪʟᴇᴡᴀᴛɪ ᴏʟᴇʜ {mention} !"
         popped = None
         try:
             if popped := check.pop(0):
                 if AUTO_DOWNLOADS_CLEAR == str(True):
                     await auto_clean(popped)
             if not check:
-                await CallbackQuery.edit_message_text(f"» ᴛʀᴀᴄᴋ sᴋɪᴩᴩᴇᴅ ʙʏ {mention} !")
+                await CallbackQuery.edit_message_text(f"» ʟᴀɢᴜ ᴅɪʟᴇᴡᴀᴛɪ ᴏʟᴇʜ {mention} !")
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention), disable_web_page_preview=True
                 )
@@ -196,7 +196,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     return
         except Exception:
             try:
-                await CallbackQuery.edit_message_text(f"» ᴛʀᴀᴄᴋ sᴋɪᴩᴩᴇᴅ ʙʏ {mention} !")
+                await CallbackQuery.edit_message_text(f"» ʟᴀɢᴜ ᴅɪʟᴇᴡᴀᴛɪ ᴏʟᴇʜ {mention} !")
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention), disable_web_page_preview=True
                 )
@@ -354,7 +354,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_played - duration_to_skip) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"» ʙᴏᴛ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ sᴇᴇᴋ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴅᴜʀᴀᴛɪᴏɴ ᴇxᴄᴇᴇᴅs.\n\nᴄᴜʀʀᴇɴᴛʟʏ ᴩʟᴀʏᴇᴅ :** {bet}** ᴍɪɴᴜᴛᴇs ᴏᴜᴛ ᴏғ **{duration}** ᴍɪɴᴜᴛᴇs.",
+                    f"» ʙᴏᴛ ɢᴀᴋ ʙɪsᴀ ᴍᴇɴᴄᴀʀɪ ᴋᴀʀᴇɴᴀ ᴅᴜʀᴀsɪɴʏᴀ ᴋᴇʙᴇʟᴇʙɪʜᴀɴ.\n\nsᴀᴀᴛ ɪɴɪ ʟᴀɢᴜ ᴅɪᴩᴜᴛᴀʀ :** {bet}** ᴍᴇɴɪᴛ ᴅᴀʀɪ ᴛᴏᴛᴀʟ **{duration}** ᴍᴇɴɪᴛ.",
                     show_alert=True,
                 )
             to_seek = duration_played - duration_to_skip + 1
@@ -362,7 +362,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if (duration_seconds - (duration_played + duration_to_skip)) <= 10:
                 bet = seconds_to_min(duration_played)
                 return await CallbackQuery.answer(
-                    f"» ʙᴏᴛ ɪs ᴜɴᴀʙʟᴇ ᴛᴏ sᴇᴇᴋ ʙᴇᴄᴀᴜsᴇ ᴛʜᴇ ᴅᴜʀᴀᴛɪᴏɴ ᴇxᴄᴇᴇᴅs.\n\nᴄᴜʀʀᴇɴᴛʟʏ ᴩʟᴀʏᴇᴅ :** {bet}** ᴍɪɴᴜᴛᴇs ᴏᴜᴛ ᴏғ **{duration}** ᴍɪɴᴜᴛᴇs.",
+                    f"» ʙᴏᴛ ɢᴀᴋ ʙɪsᴀ ᴍᴇʟᴏᴍᴘᴀᴛ ᴋᴀʀᴇɴᴀ ᴅᴜʀᴀsɪɴʏᴀ ᴋᴇʙᴇʟᴇʙɪʜᴀɴ.\n\nʟᴀɢᴜ ʏᴀɴɢ sᴇᴅᴀɴɢ ᴅɪᴘᴜᴛᴀʀ :** {bet}** ᴍᴇɴɪᴛ ᴅᴀʀɪ ᴛᴏᴛᴀʟ **{duration}** ᴍᴇɴɪᴛ.",
                     show_alert=True,
                 )
             to_seek = duration_played + duration_to_skip + 1
@@ -387,4 +387,4 @@ async def del_back_playlist(client, CallbackQuery, _):
         else:
             db[chat_id][0]["played"] += duration_to_skip
         string = _["admin_33"].format(seconds_to_min(to_seek))
-        await mystic.edit_text(f"{string}\n\nᴄʜᴀɴɢᴇs ᴅᴏɴᴇ ʙʏ : {mention} !")
+        await mystic.edit_text(f"{string}\n\nᴄᴘᴇʀᴜʙᴀʜᴀɴ ᴅɪʟᴀᴋᴜᴋᴀɴ ᴏʟᴇʜ : {mention} !")

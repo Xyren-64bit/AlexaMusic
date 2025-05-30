@@ -20,4 +20,4 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from XyrenMusic.utils.database import get_served_users, get_served_chats
 
 
-OWNER_ID = 6943243670
+OWNER_ID = 1951998665
