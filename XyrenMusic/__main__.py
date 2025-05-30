@@ -30,7 +30,7 @@ from XyrenMusic.core.cookies import save_cookies
 async def init() -> None:
     # Check for at least one valid Pyrogram string session
     if all(not getattr(config, f"STRING{i}") for i in range(1, 6)):
-        LOGGER("AlexaMusic").error("Add Pyrogram string session and then try...")
+        LOGGER("XyrenMusic").error("Add Pyrogram string session and then try...")
         exit()
     await sudo()
     try:
@@ -43,27 +43,27 @@ async def init() -> None:
     await app.start()
     await save_cookies()
     for module in ALL_MODULES:
-        importlib.import_module(f"AlexaMusic.plugins{module}")
-    LOGGER("AlexaMusic.plugins").info("Necessary Modules Imported Successfully.")
+        importlib.import_module(f"XyrenMusic.plugins{module}")
+    LOGGER("XyrenMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Alexa.start()
     try:
         await Alexa.stream_call("https://telegra.ph/file/b60b80ccb06f7a48f68b5.mp4")
     except NoActiveGroupCall:
-        LOGGER("AlexaMusic").error(
+        LOGGER("XyrenMusic").error(
             "[ERROR] - \n\nTurn on group voice chat and don't put it off otherwise I'll stop working thanks."
         )
         exit()
     except Exception:
         pass
     await Alexa.decorators()
-    LOGGER("AlexaMusic").info("Alexa Music Bot Started Successfully")
+    LOGGER("XyrenMusic").info("Alexa Music Bot Started Successfully")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AlexaMusic").info("Stopping Alexa Music Bot...")
+    LOGGER("XyrenMusic").info("Stopping Alexa Music Bot...")
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(init())
-    LOGGER("AlexaMusic").info("Stopping Music Bot")
+    LOGGER("XyrenMusic").info("Stopping Music Bot")
