@@ -1,54 +1,55 @@
-HELP_1 = """🙄**<u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:</u>**
+HELP_1 = """🙄**<u>ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ:</u>**
 
-ᴊᴜsᴛ ᴀᴅᴅ **ᴄ** ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
+ᴛᴀᴍʙᴀʜɪɴ **ᴄ** ᴅɪ ᴀᴡᴀʟ ᴘᴇʀɪɴᴛᴀʜ ʙɪᴀʀ ʙɪsᴀ ᴅɪᴘᴀᴋᴀɪ ᴅɪ ᴄʜᴀɴɴᴇʟ.
 
-/pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-/resume : ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴩᴀᴜsᴇᴅ sᴛʀᴇᴀᴍ.
-/mute : ᴍᴜᴛᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-/unmute : ᴜɴᴍᴜᴛᴇ ᴛʜᴇ ᴍᴜᴛᴇᴅ sᴛʀᴇᴀᴍ.
-/skip : sᴋɪᴩ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛ sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ɴᴇxᴛ ᴛʀᴀᴄᴋ ɪɴ ǫᴜᴇᴜᴇ.
-/end ᴏʀ /stop : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
-/shuffle : sʜᴜғғʟᴇ ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs.
-/seek : sᴇᴇᴋ ᴛʜᴇ sᴛʀᴇᴀᴍ ᴛᴏ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴜʀᴀᴛɪᴏɴ.
-/seekback : ʙᴀᴄᴋᴡᴀʀᴅ sᴇᴇᴋ ᴛʜᴇ sᴛʀᴇᴀᴍ ᴛᴏ ᴛʜᴇ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴜʀᴀᴛɪᴏɴ.
-/reboot : ʀᴇʙᴏᴏᴛs ᴛʜᴇ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ.
+/pause : ᴊᴇᴅᴀ ʟᴀɢᴜ/ᴠɪᴅᴇᴏ ʏᴀɴɢ sᴇᴅᴀɴɢ ᴅɪᴘᴜᴛᴀʀ.
+/resume : ʟᴀɴᴊᴜᴛɪɴ sᴛʀᴇᴀᴍ ʏᴀɴɢ ᴅɪᴊᴇᴅᴀ.
+/mute : ᴅɪᴀᴍɪɴ (ᴍᴜᴛᴇ) sᴛʀᴇᴀᴍ ʏᴀɴɢ ʟᴀɢɪ ᴊᴀʟᴀɴ.
+/unmute : ʙᴀᴛᴀʟɪɴ ᴍᴜᴛᴇ ɴʏᴀ.
+/skip : ʟᴏᴍᴘᴀᴛɪɴ ʟᴀɢᴜ/ᴠɪᴅᴇᴏ sᴇᴋᴀʀᴀɴɢ ᴅᴀɴ ᴘᴜᴛᴀʀ ʏᴀɴɢ ɴᴇxᴛ ᴅɪ ᴀɴᴛʀɪᴀɴ.
+/end ᴀᴛᴀᴜ /stop : ʙᴇʀʜᴇɴᴛɪɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ & ʜᴀᴘᴜs ᴀɴᴛʀɪᴀɴ.
+/shuffle : ᴀᴄᴀᴋ ʟᴀɢᴜ-ʟᴀɢᴜ ᴅɪ ᴀɴᴛʀɪᴀɴ.
+/seek : ᴍᴀᴊᴜɪɴ sᴛʀᴇᴀᴍ ᴋᴇ ᴡᴀᴋᴛᴜ ʏᴀɴɢ ʟᴜ ᴍᴀᴜ.
+/seekback : ᴍᴜɴᴅᴜʀɪɴ sᴛʀᴇᴀᴍ ᴋᴇ ᴅᴜʀᴀsɪ ʏᴀɴɢ ʟᴜ ᴛᴇɴᴛᴜɪɴ.
+/reboot : ʀᴇʙᴏᴏᴛ ʙᴏᴛ ɴʏᴀ ʙᴜᴀᴛ ᴄʜᴀᴛ ɪɴɪ.
 
-🥴<u>**ʟᴏᴏᴩ ᴩʟᴀʏ :**</u>
+🥴<u>**ᴘᴇᴍᴜᴛᴀʀᴀɴ ʟᴏᴏᴘ:**</u>
 
-/loop [ᴅɪsᴀʙʟᴇ/ᴇɴᴀʙʟᴇ] ᴏʀ [ʙᴇᴛᴡᴇᴇɴ 1:10] 
-    : ᴡʜᴇɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʙᴏᴛ ᴡɪʟʟ ᴩʟᴀʏ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ ɪɴ ʟᴏᴏᴩ ғᴏʀ 10 ᴛɪᴍᴇs ᴏʀ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴏғ ʀᴇǫᴜᴇsᴛᴇᴅ ʟᴏᴏᴩs.
+/loop [ᴍᴀᴛɪ/ɴʏᴀʟᴀ] ᴀᴛᴀᴜ [1:10]  
+    : ᴋᴀʟᴏ ᴅɪɴʏᴀʟᴀɪɴ, ʙᴏᴛ ʙᴀᴋᴀʟ ᴍᴜᴛᴀʀɪɴ ʟᴀɢᴜ ʏᴀɴɢ sᴇᴅᴀɴɢ ᴅɪᴘᴜᴛᴀʀ ʙᴇʀᴜʟᴀɴɢ sᴀᴍᴘᴇ 10 ᴋᴀʟɪ ᴀᴛᴀᴜ sᴇsᴜᴀɪ ᴘᴇʀᴍɪɴᴛᴀᴀɴ.
 
-😜<u>**ᴀᴜᴛʜ ᴜsᴇʀs :**</u>
+😜<u>**ᴘᴇɴɢɢᴜɴᴀ ᴀᴜᴛʜ:**</u>
 
-ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ.
+ᴘᴇɴɢɢᴜɴᴀ ᴀᴜᴛʜ ʙɪsᴀ ᴍᴀᴋᴇ ᴘᴇʀɪɴᴛᴀʜ ᴀᴅᴍɪɴ ʙᴏᴛ ᴍᴇꜱᴋɪ ɢᴀᴋ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴜᴘ.
 
-/auth [ᴜsᴇʀɴᴀᴍᴇ] : ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-/unauth [ᴜsᴇʀɴᴀᴍᴇ] : ʀᴇᴍᴏᴠᴇ ᴀ ᴀᴜᴛʜ ᴜsᴇʀs ғʀᴏᴍ ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ.
-/authusers : sʜᴏᴡs ᴛʜᴇ ᴀᴜᴛʜ ᴜsᴇʀs ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴩ."""
-
-
-HELP_2 = """💞<u>**ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs:**</u>
-
-ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs = play , vplay , cplay
-
-ғᴏʀᴄᴇᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs = playforce , vplayforce , cplayforce
-
-**c** sᴛᴀɴᴅs ғᴏʀ ᴄʜᴀɴɴᴇʟ ᴩʟᴀʏ.
-**v** sᴛᴀɴᴅs ғᴏʀ ᴠɪᴅᴇᴏ ᴩʟᴀʏ.
-**force** sᴛᴀɴᴅs ғᴏʀ ғᴏʀᴄᴇ ᴩʟᴀʏ.
-
-/play ᴏʀ /vplay ᴏʀ /cplay  : sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ ᴏɴ ᴠɪᴅᴇᴏᴄʜᴀᴛ.
-
-/playforce ᴏʀ /vplayforce ᴏʀ /cplayforce :  **ғᴏʀᴄᴇ ᴩʟᴀʏ** sᴛᴏᴩs ᴛʜᴇ ᴏɴɢᴏɪɴɢ sᴛʀᴇᴀᴍ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʜᴇ ʀᴇǫᴜᴇsᴛᴇᴅ ᴛʀᴀᴄᴋ.
-
-/channelplay [ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ] ᴏʀ [ᴅɪsᴀʙʟᴇ] : ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀ ɢʀᴏᴜᴩ ᴀɴᴅ sᴛᴀʀᴛs sᴛʀᴇᴀᴍɪɴɢ ᴛʀᴀᴄᴋs ʙʏ ᴛʜᴇ ʜᴇʟᴩ ᴏғ ᴄᴏᴍᴍᴀɴᴅs sᴇɴᴛ ɪɴ ɢʀᴏᴜᴩ.
+/auth [username] : ᴛᴀᴍʙᴀʜɪɴ sᴏʀᴀɴɢ ᴘᴇɴɢɢᴜɴᴀ ᴋᴇ ᴅᴀꜰᴛᴀʀ ᴀᴜᴛʜ.
+/unauth [username] : ʜᴀᴘᴜs ᴘᴇɴɢɢᴜɴᴀ ᴅᴀʀɪ ᴅᴀꜰᴛᴀʀ ᴀᴜᴛʜ.
+/authusers : ʟɪᴀᴛ ᴅᴀꜰᴛᴀʀ ᴘᴇɴɢɢᴜɴᴀ ᴀᴜᴛʜ ᴅɪ ɢʀᴜᴘ ɪɴɪ."""
 
 
-🤨**<u>sᴇʀᴠᴇʀ ᴩʟᴀʏʟɪsᴛs:</u>**
+HELP_2 = """💞<u>**ᴘᴇʀɪɴᴛᴀʜ ᴘᴇᴍᴜᴛᴀʀᴀɴ:**</u>
 
-/playlist  : ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴩʟᴀʏʟɪsᴛ ᴏɴ sᴇʀᴠᴇʀs.
-/deleteplaylist : ᴅᴇʟᴇᴛᴇ ᴀɴʏ sᴀᴠᴇᴅ ᴛʀᴀᴄᴋ ɪɴ ʏᴏᴜʀ ᴩʟᴀʏʟɪsᴛ.
-/play  : sᴛᴀʀᴛs ᴩʟᴀʏɪɴɢ ғʀᴏᴍ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴩʟᴀʏʟɪsᴛ ᴏɴ sᴇʀᴠᴇʀ."""
+ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ = play , vplay , cplay  
+ᴘᴇʀɪɴᴛᴀʜ ᴘᴀᴋsᴀɴ = playforce , vplayforce , cplayforce
+
+**c** ᴀʀᴛɪɴʏᴀ ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴅɪ ᴄʜᴀɴɴᴇʟ.  
+**v** ᴀʀᴛɪɴʏᴀ ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴠɪᴅᴇᴏ.  
+**force** ᴀʀᴛɪɴʏᴀ ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴅɪᴘᴀᴋsᴀ.
+
+/play atau /vplay atau /cplay : ᴍᴜʟᴀɪ sᴛʀᴇᴀᴍɪɴɢ ʟᴀɢᴜ/ᴠɪᴅᴇᴏ ʏᴀɴɢ ᴅɪᴍɪɴᴛᴀ ᴅɪ ᴠɪᴅᴇᴏᴄʜᴀᴛ.
+
+/playforce atau /vplayforce atau /cplayforce : **ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴘᴀᴋsᴀ** ʙᴜᴀᴛ ɴɢᴇʜᴇɴᴛɪɴ sᴛʀᴇᴀᴍ ʏᴀɴɢ sᴇᴅᴀɴɢ ʙᴇʀʟᴀɴɢsᴜɴɢ ᴅᴀɴ ᴍᴜʟᴀɪ sᴛʀᴇᴀᴍ ʏᴀɴɢ ʙᴀʀᴜ.
+
+/channelplay [username chat atau ID] atau [disable] : sᴀᴍʙᴜɴɢɪɴ ᴄʜᴀɴɴᴇʟ ᴋᴇ ɢʀᴜᴘ ᴅᴀɴ ᴍᴜʟᴀɪ sᴛʀᴇᴀᴍɪɴɢ ʟᴇᴡᴀᴛ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴅɪᴋɪʀɪᴍ ᴅɪ ɢʀᴜᴘ.
+
+
+🤨**<u>ᴘʟᴀʏʟɪsᴛ sᴇʀᴠᴇʀ:</u>**
+
+/playlist : ʟɪᴀᴛ ᴘʟᴀʏʟɪsᴛ ʟᴜ ʏᴀɴɢ ᴅɪsɪᴍᴘᴀɴ ᴅɪ sᴇʀᴠᴇʀ.
+/deleteplaylist : ʜᴀᴘᴜs ʟᴀɢᴜ ᴅɪ ᴘʟᴀʏʟɪsᴛ ʟᴜ.
+/play : ᴍᴜʟᴀɪ ᴘᴇᴍᴜᴛᴀʀᴀɴ ᴅᴀʀɪ ᴘʟᴀʏʟɪsᴛ ʟᴜ ʏᴀɴɢ ᴅɪsɪᴍᴘᴀɴ ᴅɪ sᴇʀᴠᴇʀ.
+"""
+
 
 
 HELP_3 = """😉<u>**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs:**</u>
@@ -60,96 +61,103 @@ HELP_3 = """😉<u>**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs:**</u>
 /player :  ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
 /queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ."""
 
-HELP_4 = """😴<u>**ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅs:**</u>
+HELP_4 = """😴<u>**ᴘᴇʀɪɴᴛᴀʜ ᴛᴀᴍʙᴀʜᴀɴ:**</u>
 
-/start : sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ.
-/help  : ɢᴇᴛ ʜᴇʟᴩ ᴍᴇɴᴜ ᴡɪᴛʜ ᴇxᴩʟᴀɴᴀᴛɪᴏɴ ᴏғ ᴄᴏᴍᴍᴀɴᴅs.
-/ping: sʜᴏᴡ ᴛʜᴇ ᴩɪɴɢ ᴀɴᴅ sʏsᴛᴇᴍ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+/start : ɴʏᴀʟᴀɪɴ ʙᴏᴛ ᴍᴜsɪᴋ.
+/help : ᴛᴀᴍᴘɪʟɪɴ ᴍᴇɴᴜ ʙᴀɴᴛᴜᴀɴ ʏᴀɴɢ ɪsɪɴʏᴀ ᴘᴇɴᴊᴇʟᴀsᴀɴ ᴘᴇʀɪɴᴛᴀʜ.
+/ping : ᴛᴀᴍᴘɪʟɪɴ ᴘɪɴɢ ᴅᴀɴ sᴛᴀᴛᴜs sɪsᴛᴇᴍ ʙᴏᴛ.
 
-🧐<u>**ɢʀᴏᴜᴩ sᴇᴛᴛɪɴɢs:**</u>
-/settings : sʜᴏᴡs ᴛʜᴇ ɢʀᴏᴜᴩ sᴇᴛᴛɪɴɢs ᴡɪᴛʜ ᴀɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪɴʟɪɴᴇ ᴍᴇɴᴜ."""
+🧐<u>**ᴘᴇɴɢᴀᴛᴜʀᴀɴ ɢʀᴜᴘ:**</u>
+/settings : ʟɪʜᴀᴛ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ɢʀᴜᴘ ᴅᴇɴɢᴀɴ ᴍᴇɴᴜ ɪɴʟɪɴᴇ ɪɴᴛᴇʀᴀᴋᴛɪғ."""
 
-HELP_5 = """🥺**<u>ᴀᴅᴅ & ʀᴇᴍᴏᴠᴇ sᴜᴅᴏᴇʀs:</u>**
-/addsudo [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ]
-/delsudo [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴄʜᴜᴛɪʏᴀ.]
+
+HELP_5 = """🥺**<u>ᴛᴀᴍʙᴀʜ & ʜᴀᴘᴜs sᴜᴅᴏᴇʀ:</u>**
+/addsudo [username atau balas pesan pengguna]
+/delsudo [username atau balas pesan si ngeselin]
 
 🥶**<u>ʜᴇʀᴏᴋᴜ:</u>**
-/usage : sʜᴏᴡs ᴛʜᴇ ᴅʏɴᴏ ᴜsᴀɢᴇ ᴏғ ᴛʜᴇ ᴍᴏɴᴛʜ.
+/usage : liatin pemakaian dyno bulan ini.
 
-🤯**<u>ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs:</u>**
-/get_var : ɢᴇᴛ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ғʀᴏᴍ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ.
-/del_var : ᴅᴇʟᴇᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ.
-/set_var [ᴠᴀʀ ɴᴀᴍᴇ] [ᴠᴀʟᴜᴇ] : sᴇᴛ ᴏʀ ᴜᴩᴅᴀᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ.
+🤯**<u>ᴠᴀʀ ᴋᴏɴғɪɢ:</u>**
+/get_var : ambil variabel config dari Heroku atau file .env.
+/del_var : hapus variabel config di Heroku atau file .env.
+/set_var [nama_var] [nilai] : atur atau update variabel config di Heroku atau file .env.
 
-🤖**<u>ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs:</u>**
-/restart : ʀᴇsᴛᴀʀᴛs ʏᴏᴜʀ ʙᴏᴛ.
-/update : ᴜᴩᴅᴀᴛᴇs ᴛʜᴇ ʙᴏᴛ ғʀᴏᴍ ᴛʜᴇ ᴜᴩsᴛʀᴇᴀᴍ ʀᴇᴩᴏ.
-/speedtest : ᴄʜᴇᴄᴋ ʙᴏᴛ's sᴇʀᴠᴇʀ sᴩᴇᴇᴅ.
-/maintenance [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] 
-/logger [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ʙᴏᴛ ᴡɪʟʟ sᴛᴀʀᴛ ʟᴏɢɢɪɴɢ ᴛʜᴇ ᴀᴄᴛɪᴠɪᴛɪᴇs ʜᴀᴩᴩᴇɴ ᴏɴ ʙᴏᴛ.
-/get_log [ɴᴜᴍʙᴇʀ ᴏғ ʟɪɴᴇs] : ɢᴇᴛ ʟᴏɢs ᴏғ ʏᴏᴜʀ ʙᴏᴛ [ᴅᴇғᴀᴜʟᴛ ᴠᴀʟᴜᴇ ɪs 100 ʟɪɴᴇs]
-/autoend [ᴇɴᴀʙʟᴇ|ᴅɪsᴀʙʟᴇ] : ᴇɴᴀʙʟᴇ sᴛʀᴇᴀᴍ ᴀᴜᴛᴏ ᴇɴᴅ ɪғ ɴᴏ ᴏɴᴇ ɪs ʟɪsᴛᴇɴɪɴɢ.
+🤖**<u>ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ:</u>**
+/restart : restart bot lo.
+/update : update bot dari repo pusat.
+/speedtest : cek kecepatan server bot.
+/maintenance [nyala/mati]
+/logger [nyala/mati] : aktifin log aktivitas yang terjadi di bot.
+/get_log [jumlah baris] : ambil log bot lo [default-nya 100 baris]
+/autoend [nyala|mati] : nyalain auto-end stream kalau nggak ada yang dengerin.
 
-🤑**<u>sᴛᴀᴛs ᴄᴏᴍᴍᴀɴᴅs:</u>**
-/activevoice : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇᴄʜᴀᴛs ᴏɴ ᴛʜᴇ ʙᴏᴛ.
-/activevideo : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛs ᴏɴ ʙᴏᴛ.
-/stats : sʜᴏᴡs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ sᴛᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+🤑**<u>ᴘᴇʀɪɴᴛᴀʜ sᴛᴀᴛɪsᴛɪᴋ:</u>**
+/activevoice : liat daftar voice chat aktif di bot.
+/activevideo : liat daftar video chat aktif di bot.
+/stats : tampilin statistik terkini dari bot.
 
-😒**<u>ʙʟᴀᴄᴋʟɪsᴛ ᴄʜᴀᴛ:</u>**
-/blacklistchat [ᴄʜᴀᴛ ɪᴅ] : ʙʟᴀᴄᴋʟɪsᴛ ᴀ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/whitelistchat [ᴄʜᴀᴛ ɪᴅ] : ᴡʜɪᴛᴇʟɪsᴛ ᴛʜᴇ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ.
-/blacklistedchat : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs.
+😒**<u>ᴄʜᴀᴛ ʏᴀɴɢ ᴅɪʙʟᴏᴋɪʀ:</u>**
+/blacklistchat [ID chat] : blokir chat dari akses bot.
+/whitelistchat [ID chat] : buka blokir chat yang udah diblacklist.
+/blacklistedchat : tampilkan daftar semua chat yang diblacklist.
 
-😤**<u>ʙʟᴏᴄᴋ ᴜsᴇʀs:</u>**
-/block [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴄʜᴜᴛɪʏᴀ] : sᴛᴀʀᴛs ɪɢɴᴏʀɪɴɢ ᴛʜᴇ ᴄʜᴜᴛɪʏᴀ, sᴏ ᴛʜᴀᴛ ʜᴇ ᴄᴀɴ'ᴛ ᴜsᴇ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs.
-/unblock [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] : ᴜɴʙʟᴏᴄᴋs ᴛʜᴇ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀ.
-/blockedusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ʙʟᴏᴄᴋᴇᴅ ᴜsᴇʀs.
+😤**<u>ʙʟᴏᴋɪʀ ᴘᴇɴɢɢᴜɴᴀ:</u>**
+/block [username atau balas pesan si ngeselin] : mulai ngeabaikan si ngeselin biar dia nggak bisa pake bot.
+/unblock [username atau balas pesan pengguna] : buka blokir dari user.
+/blockedusers : tampilin daftar user yang diblokir.
 
-🤬**<u>ɢʙᴀɴ ғᴇᴀᴛᴜʀᴇ:</u>**
-/gban [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴄʜᴜᴛɪʏᴀ] : ɢʟᴏʙᴀʟʟʏ ʙᴀɴs ᴛʜᴇ ᴄʜᴜᴛɪʏᴀ ғʀᴏᴍ ᴀʟʟ ᴛʜᴇ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ ʙʟᴀᴄᴋʟɪsᴛ ʜɪᴍ ғʀᴏᴍ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/ungban [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴜsᴇʀ] : ɢʟᴏʙᴀʟʟʏ ᴜɴʙᴀɴs ᴛʜᴇ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇᴅ ᴜsᴇʀ.
-/gbannedusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇʀ ᴜsᴇʀs.
+🤬**<u>ғɪᴛᴜʀ ɢʙᴀɴ:</u>**
+/gban [username atau balas pesan si ngeselin] : banned global user dari semua chat yang dilayani bot.
+/ungban [username atau balas pesan pengguna] : cabut banned global dari user tersebut.
+/gbannedusers : tampilin daftar user yang kena banned global.
 
-🎥**<u>ᴠɪᴅᴇᴏᴄʜᴀᴛ ᴍᴏᴅᴇ:</u>**
-/set_video_limit [ɴᴜᴍʙᴇʀ ᴏғ ᴄʜᴀᴛs] : sᴇᴛ ᴛʜᴇ ᴍᴀxɪᴍᴜᴍ ɴᴜᴍʙᴇʀ ᴏғ ᴠɪᴅᴇᴏᴄʜᴀᴛs ᴀʟʟᴏᴡᴇᴅ ᴏɴ ʙᴏᴛ. [ᴅᴇᴀғᴜʟᴛ - 3]
-/videomode [ᴅᴏᴡɴʟᴏᴀᴅ|ᴍ3ᴜ8] : ɪғ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴏᴅᴇ ɪs ᴇɴᴀʙʟᴇᴅ ʙᴏᴛ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ᴛʀᴀᴄᴋs ɪɴsᴛᴇᴀᴅ ᴏғ ᴩʟᴀʏɪɴɢ ᴛʜᴇᴍ ɪɴ ᴍ3ᴜ8.
+🎥**<u>ᴍᴏᴅᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ:</u>**
+/set_video_limit [jumlah chat] : atur jumlah maksimal videocall yang bisa dijalanin bot. [default = 3]
+/videomode [download|m3u8] : kalau mode download aktif, bot bakal download dulu sebelum muter track.
 
-💔**<u>ᴩʀɪᴠᴀᴛᴇ ʙᴏᴛ:</u>**
-/authorize [ᴄʜᴀᴛ ɪᴅ] : ᴀʟʟᴏᴡs ᴀ ᴄʜᴀᴛ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/unauthorize [ᴄʜᴀᴛ ɪᴅ] : ᴅɪsᴀʟʟᴏᴡs ᴛʜᴇ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ.
-/authorized : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛs.
+💔**<u>ʙᴏᴛ ᴘʀɪʙᴀᴅɪ:</u>**
+/authorize [ID chat] : izinin chat buat pake bot.
+/unauthorize [ID chat] : cabut izin dari chat yang udah diizinin.
+/authorized : tampilin daftar chat yang udah diizinin.
 
-🍒**<u>ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ:</u>**
-/broadcast [ᴍᴇssᴀɢᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ] : ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴏғ ᴛʜᴇ ʙᴏᴛ.
+🍒**<u>ғɪᴛᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛ:</u>**
+/broadcast [pesan atau balas pesan] : siarin pesan ke semua chat yang dilayani bot.
 
-<u>ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ᴍᴏᴅᴇs:</u>
-**-pin** : ᴩɪɴs ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇs ɪɴ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs.
-**-pinloud** : ᴩɪɴs ʏᴏᴜʀ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ sᴇɴᴅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ ᴛᴏ ᴛʜᴇ ᴍᴇᴍʙᴇʀs.
-**-user** : ʙʀᴏᴀᴅᴄᴀsᴛs ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴛᴏ ᴛʜᴇ ᴜsᴇʀs ᴡʜᴏ ʜᴀᴠᴇ sᴛᴀʀᴛᴇᴅ ʏᴏᴜʀ ʙᴏᴛ.
-**-assistant** : ʙʀᴏᴀᴅᴄᴀsᴛ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴀssɪᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
-**-nobot** : ғᴏʀᴄᴇs ᴛʜᴇ ʙᴏᴛ ᴛᴏ ɴᴏᴛ ʙʀᴏᴀᴅᴄᴀsᴛ ᴛʜᴇ ᴍᴇssᴀɢᴇ..
+<u>ᴍᴏᴅᴇ sɪᴀʀᴀɴ:</u>
+**-pin** : sematkan pesan broadcast lo di semua chat.
+**-pinloud** : sematkan + kirim notif ke semua member.
+**-user** : kirim broadcast ke semua user yang udah mulai bot lo.
+/**-assistant** : kirim broadcast dari akun asisten bot.
+/**-nobot** : paksa bot supaya nggak kirim broadcast itu.
 
-**ᴇxᴀᴍᴩʟᴇ:** `/broadcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ`"""
+**Contoh:** `/broadcast -user -assistant -pin Testing Broadcast`
+"""
 
-HELP_7 = """💌**<u>ʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ɴᴇᴡ ғᴇᴀᴛᴜʀᴇs:</u>**
 
-/alive : ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴄᴋ ᴀʟᴇxᴀ ᴍᴜsɪᴄ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ
-/id : ᴛᴏ ᴄʜᴇᴋ ᴜsᴇʀ ᴀɴᴅ ᴄʜᴀᴛ ɪᴅ
-/gcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ`
-/verify : ᴠᴇʀɪꜰʏ ʏᴏᴜʀsᴇʟꜰ ᴀᴛ ᴀʟᴇxᴀ ᴅᴀᴛᴀʙᴀsᴇ"""
+HELP_7 = """💌**<u>ᴅɪ sɪɴɪ ʟᴜ ʙɪsᴀ ʟɪᴀᴛ ғɪᴛᴜʀ ʙᴀʀᴜ:</u>**
 
-HELP_8 = """💰**<u>ꜰᴇᴀᴛᴜʀᴇ ꜰᴏʀ ʙʀᴏᴀᴅᴄᴀsᴛ sᴜʙsᴄʀɪᴘᴛɪᴏɴ:</u>**
+/alive : sᴇᴋᴀʀᴀɴɢ ʟᴜ ʙɪsᴀ ᴄᴇᴋ ᴀᴘᴀᴋᴀʜ ʙᴏᴛ ᴀʟᴇxᴀ ᴍᴀsɪʜ ᴀᴋᴛɪғ ᴀᴛᴀᴜ ɢᴀᴋ.
+/id : ʙᴜᴀᴛ ᴄᴇᴋ ɪᴅ ᴘᴇɴɢɢᴜɴᴀ ᴅᴀɴ ᴄʜᴀᴛ.
+/gcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ
+/verify : ᴠᴇʀɪғɪᴋᴀsɪᴋᴀɴ ᴅɪʀɪ ʟᴜ ᴅɪ ᴅᴀᴛᴀʙᴀsᴇ ᴀʟᴇxᴀ."""
 
-ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ᴍᴏɴᴛʜʟʏ ᴀɴᴅ ᴡᴇᴇᴋʟʏ ʙʀᴏᴀᴅᴄᴀsᴛ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ꜰʀᴏᴍ ᴜs. ᴡᴇ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ 3 ʙʀᴏᴀᴅᴄᴀsᴛ ꜰᴏʀ ᴡᴇᴇᴋʟʏ ᴀɴᴅ 14 ʙʀᴏᴀᴅᴄᴀsᴛ ꜰᴏʀ ᴍᴏɴᴛʜʟʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʟɪᴍɪᴛ ᴏꜰ sᴇɴᴅɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀꜰᴛᴇʀ ᴛᴡᴏ ᴅᴀʏs.
 
-**ᴏɴʟʏ ᴏᴡɴᴇʀ**
-/addweekly [ᴜsᴇʀ ɪᴅ] : ᴀᴅᴅ ᴜsᴇʀ ᴛᴏ ᴡᴇᴇᴋʟʏ ʙʀᴏᴀᴅᴄᴀsᴛ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.
-/addmonthly [ᴜsᴇʀ ɪᴅ] : ᴀᴅᴅ ᴜsᴇʀ ᴛᴏ ᴍᴏɴᴛʜʟʏ ʙʀᴏᴀᴅᴄᴀsᴛ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.  
-/removesub [ᴜsᴇʀ ɪᴅ] : ʀᴇᴍᴏᴠᴇ ᴜsᴇʀ ꜰʀᴏᴍ ʙʀᴏᴀᴅᴄᴀsᴛ sᴜʙsᴄʀɪᴘᴛɪᴏɴ.
-/checksubscription [ᴜsᴇʀ ɪᴅ] : ᴄʜᴇᴋ ᴜsᴇʀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʀᴇᴍᴀɪɴɪɴɢ ᴅᴀʏs ᴀɴᴅ ʙʀᴏᴀᴅᴄᴀsᴛ.
-/substats : ᴄʜᴇᴄᴋ ᴛᴏᴛᴀʟ ɴᴜᴍʙᴇʀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ᴡɪᴛʜ ᴛʜᴇɪʀ ɪᴅs ᴀɴᴅ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ᴛʏᴘᴇ ᴀʟᴏɴɢ ᴡɪᴛʜ ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴜᴛ.
-/subscription_alert : ᴛᴏ sᴇɴᴅ ᴀʟᴇʀᴛ ᴍᴇssᴀɢᴇ ᴛᴏ sᴜʙsᴄʀɪʙᴇʀ ᴡɪᴛʜ ʀᴇᴍᴀɪɴɪɴɢ ᴅᴀʏs  ᴀʟᴏɴɢ ᴡɪᴛʜ ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴜᴛ.
+HELP_8 = """💰**<u>ғɪᴛᴜʀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʙʀᴏᴀᴅᴄᴀsᴛ:</u>**
 
-**ᴀɴʏᴏɴᴇ ᴄᴀɴ ᴜsᴇ**
-/mysubscription : ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴋ ʏᴏᴜʀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ᴡɪᴛʜ ʀᴇᴍᴀɪɴɪɴɢ ᴅᴀʏs ᴀɴᴅ ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴜɴᴛ.
-/paidbroadcast : sᴇɴᴅ ʙʀᴏᴀᴅᴄᴀsᴛ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜsᴇʀ ᴀɴᴅ ɢʀᴏᴜᴘs ᴀᴛ ᴀ ᴛɪᴍᴇ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀ ᴀᴄᴛɪᴠᴇ sᴜʙsᴄʀɪᴘᴛɪᴏɴ."""
+sᴇᴋᴀʀᴀɴɢ ʟᴜ ʙɪsᴀ ʙᴇʟɪ ʙʀᴏᴀᴅᴄᴀsᴛ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʙᴜʟᴀɴᴀɴ ᴀᴛᴀᴜ ᴍɪɴɢɢᴜᴀɴ.  
+ᴋɪᴛᴀ ʙᴀᴋᴀʟ ᴋᴀꜱɪʜ 3 ᴋᴀʟɪ ʙʀᴏᴀᴅᴄᴀsᴛ ᴜɴᴛᴜᴋ ᴍɪɴɢɢᴜᴀɴ & 14 ᴋᴀʟɪ ᴜɴᴛᴜᴋ ʙᴜʟᴀɴᴀɴ, ᴅᴇɴɢᴀɴ ʙᴀᴛᴀs ʙɪsᴀ ᴋɪʀɪᴍ ʙʀᴏᴀᴅᴄᴀsᴛ sᴇᴛɪᴀᴘ 2 ʜᴀʀɪ.
+
+**ʜᴀɴʏᴀ ᴏᴡɴᴇʀ**
+/addweekly [ID user] : ᴛᴀᴍʙᴀʜɪɴ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ᴍɪɴɢɢᴜᴀɴ.
+/addmonthly [ID user] : ᴛᴀᴍʙᴀʜɪɴ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʙᴜʟᴀɴᴀɴ.  
+/removesub [ID user] : ʜᴀᴘᴜs sᴜʙsᴄʀɪᴘᴛɪᴏɴ ᴘᴇɴɢɢᴜɴᴀ.
+/checksubscription [ID user] : ᴄᴇᴋ sɪsᴀ ʜᴀʀɪ ᴅᴀɴ ʙʀᴏᴀᴅᴄᴀsᴛ ʏᴀɴɢ ʙɪsᴀ ᴅɪᴋɪʀɪᴍ.
+/substats : ʟɪᴀᴛ ᴅᴀꜰᴛᴀʀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ, ɪᴅ, ᴛɪᴘᴇ ᴘᴀᴋᴇᴛ, & ᴊᴜᴍʟᴀʜ ʙʀᴏᴀᴅᴄᴀsᴛ.
+/subscription_alert : ᴋɪʀɪᴍ ᴘᴇʀɪɴɢᴀᴛᴀɴ ᴋᴇ sᴜʙsᴄʀɪʙᴇʀ ʏᴀɴɢ ᴍᴀsɪʜ ᴀᴋᴛɪғ, ᴛᴇʀᴍᴀsᴜᴋ ʙʀᴏᴀᴅᴄᴀsᴛ ʏᴀɴɢ ᴛᴇʀsɪsᴀ.
+
+**ʙɪsᴀ ᴅɪᴘᴀᴋᴇ ᴏʟᴇʜ sɪᴀᴘᴀ ᴀᴊᴀ**
+/mysubscription : ᴄᴇᴋ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʟᴜ ʏᴀɴɢ ᴀᴋᴛɪғ ʙᴇꜱᴇʀᴛᴀ sɪsᴀ ʜᴀʀɪ ᴅᴀɴ ʙʀᴏᴀᴅᴄᴀsᴛ.
+/paidbroadcast : ᴋɪʀɪᴍ ʙʀᴏᴀᴅᴄᴀsᴛ ᴋᴇ sᴇᴍᴜᴀ ᴘᴇɴɢɢᴜɴᴀ ᴅᴀɴ ɢʀᴜᴘ sᴇᴋᴀʟɪɢᴜs ᴋᴀʟᴀᴜ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʟᴜ ᴀᴋᴛɪғ.
+"""
+
