@@ -27,7 +27,7 @@ def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(text="🇦🇺 ᴇɴɢʟɪsʜ 🇦🇺", callback_data="languages:en"),
-        InlineKeyboardButton(text="ID Indonesia ID", callback_data="languages:hi"),
+        InlineKeyboardButton(text="ID Indonesia ID", callback_data="languages:id"),
     )
     keyboard.row(
         InlineKeyboardButton(text="🇱🇰 සිංහල 🇱🇰", callback_data="languages:si"),
