@@ -6,7 +6,7 @@
 <br>
 <p align="center">
     <a href="https://t.me/Alexa_BotUpdates">
-        <img src="https://telegra.ph/file/f6064bc90cc76e59015b2.jpg" width="650">
+        <img src="https://i.ibb.co/TDkY6Cgt/photo-2025-05-30-20-32-00.jpg/file/f6064bc90cc76e59015b2.jpg" width="650">
     </a>
 </p>
 <br>
@@ -113,7 +113,7 @@ Through this repository, we hope to share our passion for music and innovation w
 - [ᴘʏᴛʜᴏɴ 𝟹](https://www.python.org/)
 - [ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘɪ ᴋᴇʏ](https://docs.pyrogram.org/intro/setup#api-keys)
 - [ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ](https://t.me/botfather)
-- [ᴍᴏɴɢᴏᴅʙ URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
+- [ᴍᴏɴɢᴏᴅʙ URI](https://i.ibb.co/TDkY6Cgt/photo-2025-05-30-20-32-00.jpg/How-To-get-Mongodb-URI-04-06)
 - [sᴛʀɪɴɢ sᴇssɪᴏɴ](https://github.com/TheTeamAlexa/AlexaMusic/blob/master/genstring.py)
 
 <summary><b>sᴛʀɪɴɢ sᴇssɪᴏɴ</b></summary>
