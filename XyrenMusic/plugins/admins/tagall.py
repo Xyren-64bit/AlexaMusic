@@ -122,23 +122,31 @@ def cleanup_cache():
 
 @app.on_chat_member_updated()
 async def sang_mata_listener(client, update: ChatMemberUpdated):
-    old_user = update.old_chat_member.user
-    new_user = update.new_chat_member.user
+    # Amankan kalau salah satu objek None
+    old_member = update.old_chat_member
+    new_member = update.new_chat_member
     chat_id = update.chat.id
 
+    if not old_member or not new_member or not old_member.user or not new_member.user:
+        return
+
+    old_user = old_member.user
+    new_user = new_member.user
     user_id = new_user.id
     now = time.time()
 
+    # Bersihin cache kalau udah penuh
     cleanup_cache()
 
-    # Cek dulu, jangan spam kalo baru aja update
+    # Cek throttle per user (biar nggak spam)
     if user_id in user_update_cache and now - user_update_cache[user_id] < THROTTLE_TIME:
         return
 
     user_update_cache[user_id] = now
 
-    old_name = f"{old_user.first_name} {old_user.last_name or ''}".strip()
-    new_name = f"{new_user.first_name} {new_user.last_name or ''}".strip()
+    # Ambil nama dan bandingkan
+    old_name = f"{old_user.first_name or ''} {old_user.last_name or ''}".strip()
+    new_name = f"{new_user.first_name or ''} {new_user.last_name or ''}".strip()
 
     changes = []
 
@@ -146,10 +154,12 @@ async def sang_mata_listener(client, update: ChatMemberUpdated):
         changes.append(f"📝 **Nama lo berubah nih:**\n`{old_name}` ➜ `{new_name}`")
 
     if old_user.username != new_user.username:
-        changes.append(f"📛 **Username ganti coy:**\n@{old_user.username or 'Gak ada'} ➜ @{new_user.username or 'Gak ada'}")
+        changes.append(
+            f"📛 **Username ganti coy:**\n@{old_user.username or 'Gak ada'} ➜ @{new_user.username or 'Gak ada'}"
+        )
 
     if changes:
-        await asyncio.sleep(1)  # kasih jeda dikit, biar server gak ngos-ngosan
+        await asyncio.sleep(1)  # jeda biar server gak ngos-ngosan
         try:
             await client.send_message(
                 chat_id,
@@ -157,6 +167,7 @@ async def sang_mata_listener(client, update: ChatMemberUpdated):
             )
         except Exception as e:
             print(f"⚠️ Gagal ngirim info Sang Mata: {e}")
+
 
 
 @app.on_message(filters.command(["tagall", "tagmember" ], prefixes=["/", "@", "#"]))
