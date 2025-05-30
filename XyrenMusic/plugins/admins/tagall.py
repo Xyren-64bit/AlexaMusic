@@ -4,7 +4,7 @@ import random
 from pyrogram import Client, filters
 from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.errors import UserNotParticipant
-from pyrogram.types import ChatPermissions
+from pyrogram.types import ChatPermissions, ChatMemberUpdated
 
 spam_chats = []
 
@@ -157,7 +157,7 @@ async def sang_mata_listener(client, update: ChatMemberUpdated):
             )
         except Exception as e:
             print(f"⚠️ Gagal ngirim info Sang Mata: {e}")
-            
+
 
 @app.on_message(filters.command(["tagall", "tagmember" ], prefixes=["/", "@", "#"]))
 async def mentionall(client, message):
