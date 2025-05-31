@@ -1,87 +1,110 @@
+import os
 import io
-from pyrogram import filters
-from pyrogram.types import Message
 from PIL import Image, ImageDraw, ImageFont
+from pyrogram import filters
+from pyrogram.types import Message, MessageEntity
 from XyrenMusic import app
 
+def get_msg_entities(msg: Message):
+    entities = []
+    if not msg.entities:
+        return entities
 
-def create_quotly_style_sticker(text: str, username: str) -> io.BytesIO:
-    max_width = 512
-    padding = 40
-    bg_color = (47, 35, 64)         # Warna bubble gelap
-    username_color = (255, 153, 0)  # Orange
-    text_color = (255, 255, 255)
+    for entity in msg.entities:
+        entities.append(
+            {
+                "type": entity.type,
+                "offset": entity.offset,
+                "length": entity.length,
+            }
+        )
+    return entities
 
-    # Gunakan font sistem atau default
+def quotify(data):
     try:
-        font = ImageFont.truetype("arial.ttf", 36)
-        username_font = ImageFont.truetype("arial.ttf", 28)
-    except:
-        font = ImageFont.load_default()
-        username_font = ImageFont.load_default()
+        message = data[0]
+        text = message["text"]
+        user_name = message["from"]["name"]
+        reply_text = ""
+        if message.get("replyMessage"):
+            reply = message["replyMessage"]
+            reply_name = reply.get("name", "Unknown")
+            reply_content = reply.get("text", "")
+            reply_text = f"{reply_name} said: {reply_content}\n\n"
 
-    # Gambar sementara untuk menghitung ukuran
-    temp = Image.new("RGB", (max_width, 1000))
-    draw = ImageDraw.Draw(temp)
+        final_text = reply_text + f"{user_name}:\n{text}"
 
-    def wrap(text, font, max_width):
-        words = text.split()
-        lines, line = [], ""
-        for word in words:
-            test_line = f"{line} {word}".strip()
-            if draw.textlength(test_line, font=font) <= max_width - 2 * padding:
-                line = test_line
-            else:
-                lines.append(line)
-                line = word
-        lines.append(line)
-        return lines
+        # Create image
+        img = Image.new("RGB", (600, 300), color=(255, 255, 255))
+        draw = ImageDraw.Draw(img)
 
-    lines = wrap(text, font, max_width)
-    line_height = font.getbbox("A")[3]
-    username_height = username_font.getbbox("A")[3]
-    total_height = padding + username_height + len(lines) * line_height + padding
+        try:
+            font = ImageFont.truetype("arial.ttf", 18)
+        except:
+            font = ImageFont.load_default()
 
-    # Gambar akhir
-    img = Image.new("RGB", (max_width, total_height), bg_color)
-    draw = ImageDraw.Draw(img)
+        draw.text((10, 10), final_text, fill=(0, 0, 0), font=font)
 
-    draw.text((padding, padding), username, font=username_font, fill=username_color)
+        output_path = "quote.webp"
+        img.save(output_path, "WEBP")
 
-    y = padding + username_height + 10
-    for line in lines:
-        draw.text((padding, y), line, font=font, fill=text_color)
-        y += line_height
-
-    # Resize ke 512x512
-    img = img.resize((512, 512))
-    output = io.BytesIO()
-    img.save(output, format="WEBP")
-    output.name = "sticker.webp"
-    output.seek(0)
-    return output
-
+        return True, output_path
+    except Exception as e:
+        return False, str(e)
 
 @app.on_message(filters.command("q") & filters.reply)
-async def quotly_command(_, message: Message):
-    reply = message.reply_to_message
+async def quote_the_msg(_, m: Message):
+    if not m.reply_to_message:
+        await m.reply_text("Reply to a message to quote it.")
+        return
 
-    if not reply or not reply.text:
-        return await message.reply("❌ Balas pesan teks untuk dijadikan stiker.")
+    to_edit = await m.reply_text("Generating quote...")
 
-    username = (
-        reply.from_user.username or reply.from_user.first_name
-    )
-    text = reply.text
+    reply_message = {}
+    if len(m.command) > 1 and m.command[1].lower() == "r":
+        reply_msg = m.reply_to_message.reply_to_message
+        if reply_msg and reply_msg.text:
+            await to_edit.edit_text("Generating quote with reply to the message...")
+            replied_name = reply_msg.from_user.first_name
+            if reply_msg.from_user.last_name:
+                replied_name += f" {reply_msg.from_user.last_name}"
 
-    await message.reply("🎨 Membuat stiker...")
+            reply_message = {
+                "chatId": reply_msg.from_user.id,
+                "entities": get_msg_entities(reply_msg),
+                "name": replied_name,
+                "text": reply_msg.text,
+            }
 
-    try:
-        sticker = create_quotly_style_sticker(text, username)
-        await app.send_sticker(
-            chat_id=message.chat.id,
-            sticker=sticker,
-            reply_to_message_id=message.id
-        )
-    except Exception as e:
-        await message.reply(f"⚠️ Gagal membuat stiker: {e}")
+    user = m.reply_to_message.from_user
+    name = user.first_name
+    if user.last_name:
+        name += f" {user.last_name}"
+
+    emoji_status = None
+    if hasattr(user, "emoji_status") and user.emoji_status:
+        emoji_status = str(user.emoji_status.custom_emoji_id)
+
+    msg_data = [
+        {
+            "entities": get_msg_entities(m.reply_to_message),
+            "avatar": True,
+            "from": {
+                "id": user.id,
+                "name": name,
+                "emoji_status": emoji_status,
+            },
+            "text": m.reply_to_message.text,
+            "replyMessage": reply_message,
+        }
+    ]
+
+    status, path = quotify(msg_data)
+
+    if not status:
+        await to_edit.edit_text(path)
+        return
+
+    await m.reply_sticker(path)
+    await to_edit.delete()
+    os.remove(path)
