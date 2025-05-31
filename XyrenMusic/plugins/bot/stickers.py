@@ -5,65 +5,82 @@ from PIL import Image, ImageDraw, ImageFont
 from XyrenMusic import app
 
 
-def create_quote_sticker(text: str, username: str) -> io.BytesIO:
-    width, height = 512, 512
-    background_color = (255, 255, 255, 0)  # Transparan
-    text_color = (0, 0, 0)
+def create_quotly_style_sticker(text: str, username: str) -> io.BytesIO:
+    max_width = 512
+    padding = 40
+    bg_color = (47, 35, 64)         # Warna bubble gelap
+    username_color = (255, 153, 0)  # Orange
+    text_color = (255, 255, 255)
 
-    img = Image.new("RGBA", (width, height), background_color)
-    draw = ImageDraw.Draw(img)
-
+    # Gunakan font sistem atau default
     try:
-        font = ImageFont.truetype("arial.ttf", 30)
-        username_font = ImageFont.truetype("arial.ttf", 24)
+        font = ImageFont.truetype("arial.ttf", 36)
+        username_font = ImageFont.truetype("arial.ttf", 28)
     except:
         font = ImageFont.load_default()
         username_font = ImageFont.load_default()
 
-    draw.text((20, 20), f"@{username}:", font=username_font, fill=(80, 80, 80))
+    # Gambar sementara untuk menghitung ukuran
+    temp = Image.new("RGB", (max_width, 1000))
+    draw = ImageDraw.Draw(temp)
 
-    lines = []
-    words = text.split()
-    line = ""
-    for word in words:
-        if draw.textlength(line + word, font=font) < 460:
-            line += f"{word} "
-        else:
-            lines.append(line)
-            line = f"{word} "
-    lines.append(line)
+    def wrap(text, font, max_width):
+        words = text.split()
+        lines, line = [], ""
+        for word in words:
+            test_line = f"{line} {word}".strip()
+            if draw.textlength(test_line, font=font) <= max_width - 2 * padding:
+                line = test_line
+            else:
+                lines.append(line)
+                line = word
+        lines.append(line)
+        return lines
 
-    y = 60
+    lines = wrap(text, font, max_width)
+    line_height = font.getbbox("A")[3]
+    username_height = username_font.getbbox("A")[3]
+    total_height = padding + username_height + len(lines) * line_height + padding
+
+    # Gambar akhir
+    img = Image.new("RGB", (max_width, total_height), bg_color)
+    draw = ImageDraw.Draw(img)
+
+    draw.text((padding, padding), username, font=username_font, fill=username_color)
+
+    y = padding + username_height + 10
     for line in lines:
-        draw.text((20, y), line.strip(), font=font, fill=text_color)
-        y += 35
+        draw.text((padding, y), line, font=font, fill=text_color)
+        y += line_height
 
+    # Resize ke 512x512
+    img = img.resize((512, 512))
     output = io.BytesIO()
-    img.save(output, format="PNG")
-    output.name = "quote.png"
+    img.save(output, format="WEBP")
+    output.name = "sticker.webp"
     output.seek(0)
     return output
 
 
 @app.on_message(filters.command("q") & filters.reply)
-async def make_quote_sticker(_, message: Message):
+async def quotly_command(_, message: Message):
     reply = message.reply_to_message
 
-    if not reply.text:
+    if not reply or not reply.text:
         return await message.reply("❌ Balas pesan teks untuk dijadikan stiker.")
 
     username = (
-        reply.from_user.username if reply.from_user.username else reply.from_user.first_name
+        reply.from_user.username or reply.from_user.first_name
     )
     text = reply.text
 
-    await message.reply("🛠️ Membuat stiker...")
+    await message.reply("🎨 Membuat stiker...")
 
     try:
-        sticker_bytes = create_quote_sticker(text, username)
+        sticker = create_quotly_style_sticker(text, username)
         await app.send_sticker(
             chat_id=message.chat.id,
-            sticker=sticker_bytes,
+            sticker=sticker,
             reply_to_message_id=message.id
         )
     except Exception as e:
