@@ -1,21 +1,18 @@
 import io
 from pyrogram import filters
-from pyrogram.types import Message, InputSticker, InputMediaSticker
+from pyrogram.types import Message
 from PIL import Image, ImageDraw, ImageFont
 from XyrenMusic import app
 
 
 def create_quote_sticker(text: str, username: str) -> io.BytesIO:
-    # Ukuran dasar stiker
     width, height = 512, 512
     background_color = (255, 255, 255, 0)  # Transparan
     text_color = (0, 0, 0)
 
-    # Membuat gambar kosong
     img = Image.new("RGBA", (width, height), background_color)
     draw = ImageDraw.Draw(img)
 
-    # Memuat font
     try:
         font = ImageFont.truetype("arial.ttf", 30)
         username_font = ImageFont.truetype("arial.ttf", 24)
@@ -23,10 +20,8 @@ def create_quote_sticker(text: str, username: str) -> io.BytesIO:
         font = ImageFont.load_default()
         username_font = ImageFont.load_default()
 
-    # Menulis nama pengguna
     draw.text((20, 20), f"@{username}:", font=username_font, fill=(80, 80, 80))
 
-    # Menulis teks
     lines = []
     words = text.split()
     line = ""
@@ -43,7 +38,6 @@ def create_quote_sticker(text: str, username: str) -> io.BytesIO:
         draw.text((20, y), line.strip(), font=font, fill=text_color)
         y += 35
 
-    # Simpan ke dalam buffer
     output = io.BytesIO()
     img.save(output, format="PNG")
     output.name = "quote.png"
